@@ -1,0 +1,12 @@
+name: TEST AWS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Region
+        run: echo "Region = ${{ secrets.AWS_REGION }}"
